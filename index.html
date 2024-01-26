@@ -10,21 +10,21 @@
 
 <body class="bg-black h-screen w-screen">
 
-    <div class="flex justify-center items-center w-full h-full flex-col">
-        <div class="text-LaserGreen text-4xl text-center font-CutiveMono flex-col">
+    <div class="flex items-center w-full h-full flex-col px-10">
+        <div class="text-LaserGreen text-4xl text-center font-CutiveMono flex-col ">
             <div>Welcome To</div>
             <div class="mb-16">One For All</div>
             <div>Select an API...</div>
         </div>
-        <div class="flex flex-row my-10">
-            <div class="mr-24 flex flex-col">
+        <div class="flex flex-col lg:flex-row my-10">
+            <div class="lg:mr-24 flex flex-col">
               <button id="SayHelloBtn" type="button" class="selectedButton my-4">Say Hello</button>
               <button id="AddTwoNumBtn" type="button" class="unSelectedButton my-4">Add 2 Numbers</button>
               <button id="AskQuestionsBtn" type="button" class="unSelectedButton my-4">Asking Questions</button>
               <button id="GreaterOrLessBtn" type="button" class="unSelectedButton my-4">Greater Than or Less Than</button>
               <button id="MadLibBtn" type="button" class="unSelectedButton my-4">Mad Lib</button>
             </div>
-            <div class="ml-24 flex flex-col">
+            <div class="lg:ml-24 flex flex-col">
                <button id="OddOrEvenBtn" type="button" class="unSelectedButton my-4">Odd or Even</button> 
               <button id="ReverseItNumBtn" type="button" class="unSelectedButton my-4">Reverse It #</button>
               <button id="ReverseItAlphaBtn" type="button" class="unSelectedButton my-4">Reverse It AZ#</button>
@@ -32,8 +32,8 @@
               <button id="MagicEightBtn" type="button" class="unSelectedButton my-4">Magic 8</button>
             </div>     
         </div>
-        <div>
-            <button id="GoBtn" type="button" class="redBtn">Go =></button>
+        <div class="pb-10 flex justify-center items-center">
+            <button id="GoBtn" type="button" class="redBtn text-3xl">Go =></button>
         </div>
 
     </div>
