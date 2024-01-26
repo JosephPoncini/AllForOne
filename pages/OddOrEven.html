@@ -9,19 +9,22 @@
 </head>
 
 <body class="bg-black h-screen w-screen overflow-hidden">
-    <div class="flex items-center w-full h-full flex-col mt-52">
+    <div class="flex items-center w-full h-full flex-col px-10">
         <div class="text-LaserGreen text-4xl text-center font-CutiveMono my-9">API: ODD OR EVEN</div>
         <div class="flex flex-row my-9">
-            <span class="text-LaserGreen text-4xl text-center font-CutiveMono">Type in a name:</span>
+            <span class="text-LaserGreen text-4xl text-center font-CutiveMono">Give me a number:</span>
             <div>
-                <input type="text" id="small-input" class="inputField">
+                <input type="text" id="input1" class="inputField">
             </div>
         </div>
         <button id="ExecuteBtn" type="button" class="executeBtn my-9 text-4xl ">Execute</button>
         <div class="text-LaserGreen text-4xl text-center font-CutiveMono my-9">
             Output: <br>
         </div>
-        <button id="BackBtn" type="button" class="redBtn my-9 text-3xl"> <= Back </button>
+        <div class="py-10 flex justify-center items-center">
+            <button id="BackBtn" type="button" class="redBtn text-3xl">
+                <= Back </button>
+        </div>
     </div>
 
     <script type="module" src="../script/api_app.js"></script>

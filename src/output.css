@@ -1134,6 +1134,10 @@ input:checked + .toggle-bg{
   margin-bottom: 0.25rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-16{
   margin-bottom: 4rem;
 }
@@ -1152,10 +1156,6 @@ input:checked + .toggle-bg{
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-52{
-  margin-top: 13rem;
 }
 
 .block{
@@ -1288,12 +1288,20 @@ input:checked + .toggle-bg{
   resize: both;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1448,6 +1456,11 @@ input:checked + .toggle-bg{
   padding: 1rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1456,6 +1469,11 @@ input:checked + .toggle-bg{
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2{
@@ -1471,6 +1489,10 @@ input:checked + .toggle-bg{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .pt-2{
@@ -1706,16 +1728,17 @@ input:checked + .toggle-bg{
 
 .inputField{
   display: block;
-  width: 100%;
-  border-radius: 0.5rem;
+  width: 20rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-  padding: 0.5rem;
+  text-align: center;
+  font-family: Cutive Mono;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .inputField:focus{
@@ -1755,6 +1778,75 @@ input:checked + .toggle-bg{
   .inputField{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .inputField{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.longInputField{
+  display: block;
+  width: 50%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  text-align: center;
+  font-family: Cutive Mono;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.longInputField:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(63 131 248 / var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
+}
+
+:is(.dark .longInputField){
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .longInputField)::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+:is(.dark .longInputField)::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity));
+}
+
+:is(.dark .longInputField:focus){
+  --tw-border-opacity: 1;
+  border-color: rgb(63 131 248 / var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
+}
+
+@media (min-width: 640px){
+  .longInputField{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .longInputField{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
