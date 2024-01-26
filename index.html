@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body class="bg-black h-screen w-screen">
+
+    <div class="flex justify-center items-center w-full h-full flex-col">
+        <div class="text-LaserGreen text-4xl text-center font-CutiveMono flex-col">
+            <div>Welcome To</div>
+            <div class="mb-16">One For All</div>
+            <div>Select an API...</div>
+        </div>
+        <div class="flex flex-row my-10">
+            <div class="mr-24 flex flex-col">
+              <button id="SayHelloBtn" type="button" class="selectedButton my-4">Say Hello</button>
+              <button id="AddTwoNumBtn" type="button" class="unSelectedButton my-4">Add 2 Numbers</button>
+              <button id="AskQuestionsBtn" type="button" class="unSelectedButton my-4">Asking Questions</button>
+              <button id="GreaterOrLessBtn" type="button" class="unSelectedButton my-4">Greater Than or Less Than</button>
+              <button id="MadLibBtn" type="button" class="unSelectedButton my-4">Mad Lib</button>
+            </div>
+            <div class="ml-24 flex flex-col">
+               <button id="OddOrEvenBtn" type="button" class="unSelectedButton my-4">Odd or Even</button> 
+              <button id="ReverseItNumBtn" type="button" class="unSelectedButton my-4">Reverse It #</button>
+              <button id="ReverseItAlphaBtn" type="button" class="unSelectedButton my-4">Reverse It AZ#</button>
+              <button id="RestaurantPickerBtn" type="button" class="unSelectedButton my-4">Restaurant Picker</button>
+              <button id="MagicEightBtn" type="button" class="unSelectedButton my-4">Magic 8</button>
+            </div>     
+        </div>
+        <div>
+            <button id="GoBtn" type="button" class="redBtn">Go =></button>
+        </div>
+
+    </div>
+
+    <script src="../script/app.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
