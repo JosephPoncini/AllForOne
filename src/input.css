@@ -17,7 +17,7 @@
     }
 
     .redBtn{
-        @apply text-black font-bold font-CutiveMono w-52 h-12 bg-red-700 hover:bg-red-800 rounded-lg  px-5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 
+        @apply text-black font-bold text-xl lg:text-3xl font-CutiveMono w-52 h-12 bg-red-700 hover:bg-red-800 rounded-lg  px-5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 
     }
 
     .inputField{

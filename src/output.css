@@ -1115,11 +1115,6 @@ input:checked + .toggle-bg{
   z-index: 50;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1138,32 +1133,16 @@ input:checked + .toggle-bg{
   margin-bottom: 2.5rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
 
-.ml-24{
-  margin-left: 6rem;
-}
-
-.mr-24{
-  margin-right: 6rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mt-10{
-  margin-top: 2.5rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
 }
 
 .block{
@@ -1296,24 +1275,12 @@ input:checked + .toggle-bg{
   resize: both;
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-rows-3{
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -1464,14 +1431,6 @@ input:checked + .toggle-bg{
   padding: 1rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
-.p-20{
-  padding: 5rem;
-}
-
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1507,9 +1466,8 @@ input:checked + .toggle-bg{
   padding-bottom: 0.75rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pt-10{
@@ -1520,10 +1478,6 @@ input:checked + .toggle-bg{
   padding-top: 0.5rem;
 }
 
-.pb-10{
-  padding-bottom: 2.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1532,14 +1486,14 @@ input:checked + .toggle-bg{
   font-family: Cutive Mono;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-lg{
@@ -1550,16 +1504,6 @@ input:checked + .toggle-bg{
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-medium{
@@ -1741,6 +1685,8 @@ input:checked + .toggle-bg{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   font-family: Cutive Mono;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1759,6 +1705,13 @@ input:checked + .toggle-bg{
 :is(.dark .redBtn:hover){
   --tw-bg-opacity: 1;
   background-color: rgb(200 30 30 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .redBtn{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .inputField{
@@ -2039,35 +1992,17 @@ input:checked + .toggle-bg{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:mb-10{
-    margin-bottom: 2.5rem;
-  }
-
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:flex-row{
-    flex-direction: row;
-  }
-
-  .sm\:flex-col{
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 1024px){
-  .lg\:mr-24{
-    margin-right: 6rem;
+  .lg\:mb-0{
+    margin-bottom: 0px;
   }
 
   .lg\:ml-24{
     margin-left: 6rem;
   }
 
-  .lg\:mb-0{
-    margin-bottom: 0px;
+  .lg\:mr-24{
+    margin-right: 6rem;
   }
 
   .lg\:grid{
@@ -2084,10 +2019,6 @@ input:checked + .toggle-bg{
 
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:flex-col{
-    flex-direction: column;
   }
 
   .lg\:justify-center{

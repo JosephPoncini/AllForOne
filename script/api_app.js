@@ -62,23 +62,14 @@ function GetAddress() {
 const GetApi = async (address) => {
     const promise = await fetch("https://poncinijallforoneapis.azurewebsites.net/" + address);
     const data = await promise.text();
-    console.log(data);
+    // console.log(data);
     return data;
 }
 
-// digimonInput.addEventListener("keydown", async (event) => {
-//     if (event.key === "Enter") {
-//         let digimon = await digimonApi(event.target.value);
-//         // console.log(digimon);
-//         digimonImg.src = digimon[0].img;
-//         digimonName.textContent = digimon[0].name;
-//         digimonStatus.textContent = digimon[0].level;
-//     }
-// })
 
 ExecuteBtn.addEventListener("click", async() => {
     let address = GetAddress();
     let outputTxt = await GetApi(address);
-    console.log(outputTxt);
+    // console.log(outputTxt);
     output.innerText = "Output: \n \n" + outputTxt;
 })
